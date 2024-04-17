@@ -137,13 +137,54 @@
 
 //Write a function that returns the sum of all numbers in an array. 
 
-function sumArray(arr){
-    let sumArr=0;
-    for(let i=0; i<arr.length; i++){
-        sumArr+=arr[i];
+// function sumArray(arr){
+//     let sumArr=0;
+//     for(let i=0; i<arr.length; i++){
+//         sumArr+=arr[i];
+//     }
+//     return sumArr
+// }
+
+// let ArrayNumer =[1,2,3]
+// console.log(sumArray(ArrayNumer));
+
+//Implement a function that finds the maximum number in an array
+
+// function maxNumber(arr){
+//     let arrMax= arr[0];
+//     for(let i=1; i<arr.length; i++){
+//         if(arr[i]>arrMax){
+//             arrMax = arr[i]
+//         }
+//     }
+//     return arrMax;
+// }
+
+// let ArrayNumer =[111111,2,3,777,+66666334]
+// console.log(maxNumber(ArrayNumer));
+
+
+//Write a function that returns a new array containing only the unique elements from an input array.
+//steps to do it 
+// We start by creating an empty array called uniqueArray. This is where we’ll store our unique elements.
+// Then, we start a loop that goes through each element in the input array arr.
+// For each element, we use the indexOf method to check if it’s already in uniqueArray. The indexOf method returns the index of the element in the array if it’s present, and -1 if it’s not.
+// If indexOf returns -1, that means the element is not in uniqueArray, so we add it using the push method.
+// If indexOf does not return -1, that means the element is already in uniqueArray, so we do nothing and move on to the next element.
+// Once we’ve checked all the elements in arr, we return uniqueArray, which now contains only the unique elements from arr.
+
+
+function uniqueElement(arr){
+    let uniqueArray =[];
+    for(let i=0;i<arr.length; i++){
+        if(uniqueArray.indexOf(arr[i])===-1){
+            uniqueArray.push(arr[i]);
+        }
+
     }
-    return sumArr
+    return uniqueArray;
 }
 
-let ArrayNumer =[1,2,3]
-console.log(sumArray(ArrayNumer));
+// let ArrayNumer =[111111,2,3,777,+66666334]
+let ArrayNumer =[1, 2, 2, 3, 4, 4, 5]
+console.log(uniqueElement(ArrayNumer));
