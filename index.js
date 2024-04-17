@@ -118,18 +118,32 @@
 //Write a JavaScript function to check if a given number is prime
 // defination of prime number 
 // primenumber is 1,2,3,5,7,11,13 and so on...
-
-function primeNumber(num){
-    for(let i=0;i<=num;i++) {
-        if (num%1==0 && num%i==0){
-            console.log("prime")
-        }else{
-            console.log( "Not Prime");
-        }
-    }
+//wrong one
+// function primeNumber(num){
+//     for(let i=0;i<=num;i++) {
+//         if (num%1==0 && num%i==0){
+//             console.log("prime")
+//         }else{
+//             console.log( "Not Prime");
+//         }
+//     }
    
       
+// }
+
+// let number=6;
+// console.log(primeNumber(number));
+
+
+//Write a function that returns the sum of all numbers in an array. 
+
+function sumArray(arr){
+    let sumArr=0;
+    for(let i=0; i<arr.length; i++){
+        sumArr+=arr[i];
+    }
+    return sumArr
 }
 
-let number=6;
-console.log(primeNumber(number));
+let ArrayNumer =[1,2,3]
+console.log(sumArray(ArrayNumer));
