@@ -212,13 +212,23 @@
 // let ArryaV =[1,2,3,4,5,6,7,8,9];
 // console.log(avgArray(ArryaV));
 
-function calculateAvg(numbers){
-    let sum=0;
-    for(let number of numbers){
-            sum+=number;
-    }
-    return sum/numbers.length;
+// function calculateAvg(numbers){
+//     let sum=0;
+//     for(let number of numbers){
+//             sum+=number;
+//     }
+//     return sum/numbers.length;
+// }
+
+// let Num=[1,2,3,4,5,6,7,8,9]
+// console.log(calculateAvg(Num));
+
+//function that sorts an array of strings in alphabetical order. 
+
+function sortArray(arr){
+    return arr.slice().sort();
 }
 
-let Num=[1,2,3,4,5,6,7,8,9]
-console.log(calculateAvg(Num));
+let array=["zz",'aa',"ww","cc","bb"];
+
+console.log(sortArray(array));
