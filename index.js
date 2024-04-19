@@ -174,17 +174,51 @@
 // Once we’ve checked all the elements in arr, we return uniqueArray, which now contains only the unique elements from arr.
 
 
-function uniqueElement(arr){
-    let uniqueArray =[];
-    for(let i=0;i<arr.length; i++){
-        if(uniqueArray.indexOf(arr[i])===-1){
-            uniqueArray.push(arr[i]);
-        }
+// function uniqueElement(arr){
+//     let uniqueArray =[];
+//     for(let i=0;i<arr.length; i++){
+//         if(uniqueArray.indexOf(arr[i])===-1){
+//             uniqueArray.push(arr[i]);
+//         }
 
+//     }
+//     return uniqueArray;0
+// }
+
+// // let ArrayNumer =[111111,2,3,777,+66666334]
+// let ArrayNumer =[1, 2, 2, 3, 4, 4, 5]
+// console.log(uniqueElement(ArrayNumer));
+
+// function uniqueArray(arr){
+//     let uniqueElement=[];
+//     for(let i=0;i<arr.length; i++){
+//         if(uniqueElement.indexOf(arr[i])===-1){
+//             uniqueElement.push(arr[i]);
+//         }
+//     }
+//     return uniqueArray
+// }
+
+//Implement a function that returns the average value of numbers in an array.
+
+// function avgArray(arr){
+//     let  sum = 0;
+//     for(let i=0; i<arr.length; i++){
+//         sum+=arr[i]/arr.length;
+//     }
+//     return  sum;
+// }
+
+// let ArryaV =[1,2,3,4,5,6,7,8,9];
+// console.log(avgArray(ArryaV));
+
+function calculateAvg(numbers){
+    let sum=0;
+    for(let number of numbers){
+            sum+=number;
     }
-    return uniqueArray;
+    return sum/numbers.length;
 }
 
-// let ArrayNumer =[111111,2,3,777,+66666334]
-let ArrayNumer =[1, 2, 2, 3, 4, 4, 5]
-console.log(uniqueElement(ArrayNumer));
+let Num=[1,2,3,4,5,6,7,8,9]
+console.log(calculateAvg(Num));
