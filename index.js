@@ -225,10 +225,48 @@
 
 //function that sorts an array of strings in alphabetical order. 
 
-function sortArray(arr){
-    return arr.slice().sort();
+// function sortArray(arr){
+//     return arr.slice().sort();
+// }
+
+// let array=["zz",'aa',"ww","cc","bb"];
+
+// console.log(sortArray(array));
+
+//=====================================
+//  bubble short alogorith we can use to solve it 
+//  need to check latter 
+// }
+
+//------------------------
+
+//Implement a function that finds the index of a specific element in an array. If the element is not found, the function should return -1.
+
+// function findIndexof(arr,element){
+//     for(let i=0; i<arr.length; i++){
+//         if(arr[i]===element){
+//             return i;
+//         }
+//     }
+//     return -1
+// }
+
+
+// let ArrayElement=[1, 2, 3, 4, 5]
+// let Elements=3;
+
+// console.log(findIndexof(ArrayElement,Elements));
+
+function findIndexOf(arr,elemet){
+    for(let i=0; i<arr.length; i++){
+        if(arr[i]===elemet){
+            return i;
+        }
+    }
+    return -1;
 }
 
-let array=["zz",'aa',"ww","cc","bb"];
+let ArrayElement=[1, 2, 3, 4, 5]
+let Elements=3;
 
-console.log(sortArray(array));
+console.log(findIndexOf(ArrayElement,Elements))
