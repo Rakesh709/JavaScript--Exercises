@@ -1,14 +1,14 @@
-// Write a JavaScript function to calculate the sum of two numbers. 
+// Write a JavaScript function to calculate the sum of two numbers.
 
 // function sumToNumber(num1,num2){
 //     return  num1+num2;
 // }
 
 // const sum = sumToNumber(2,4);
-// console.log(`The sum is ${sum}`); 
+// console.log(`The sum is ${sum}`);
 //-------------------------------------------------------------------------------------------
 
-//Write a JavaScript program to find the maximum number in an array. 
+//Write a JavaScript program to find the maximum number in an array.
 // const maxArray = [1,5,7,3];
 
 // function findMaxArray(arr){
@@ -24,9 +24,6 @@
 // let number =[2,6,8,3];
 // console.log(findMaxArray(number));
 
-
-
-
 // function findMax(arr){
 //     let max = arr[0];
 //     for (let i=1;i<arr.length;i++){
@@ -39,7 +36,7 @@
 
 //----------------------------------------------------------------------------------------
 
-//Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards). 
+//Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards).
 
 // function sameSame(text){
 //     let newText = text.split('').reverse().join('');
@@ -71,7 +68,7 @@
 // console.log(reverseString(testStr));
 
 //--------------------------------------------------------------------------------------
-//Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers. 
+//Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers.
 // function arrayEven(arr){
 //     let newArray= [];
 //     for(let i=0;i<arr.length;i++){
@@ -102,7 +99,6 @@
 // let number=3;
 // console.log(factorial(number));
 
-
 // function factorial(num){
 //     let fact=1;
 //     for( let i=1 ;i<=num;i++){
@@ -116,7 +112,7 @@
 
 //---------------------------------------------------------------------------
 //Write a JavaScript function to check if a given number is prime
-// defination of prime number 
+// defination of prime number
 // primenumber is 1,2,3,5,7,11,13 and so on...
 //wrong one
 // function primeNumber(num){
@@ -127,15 +123,13 @@
 //             console.log( "Not Prime");
 //         }
 //     }
-   
-      
+
 // }
 
 // let number=6;
 // console.log(primeNumber(number));
 
-
-//Write a function that returns the sum of all numbers in an array. 
+//Write a function that returns the sum of all numbers in an array.
 
 // function sumArray(arr){
 //     let sumArr=0;
@@ -163,16 +157,14 @@
 // let ArrayNumer =[111111,2,3,777,+66666334]
 // console.log(maxNumber(ArrayNumer));
 
-
 //Write a function that returns a new array containing only the unique elements from an input array.
-//steps to do it 
+//steps to do it
 // We start by creating an empty array called uniqueArray. This is where we’ll store our unique elements.
 // Then, we start a loop that goes through each element in the input array arr.
 // For each element, we use the indexOf method to check if it’s already in uniqueArray. The indexOf method returns the index of the element in the array if it’s present, and -1 if it’s not.
 // If indexOf returns -1, that means the element is not in uniqueArray, so we add it using the push method.
 // If indexOf does not return -1, that means the element is already in uniqueArray, so we do nothing and move on to the next element.
 // Once we’ve checked all the elements in arr, we return uniqueArray, which now contains only the unique elements from arr.
-
 
 // function uniqueElement(arr){
 //     let uniqueArray =[];
@@ -223,7 +215,7 @@
 // let Num=[1,2,3,4,5,6,7,8,9]
 // console.log(calculateAvg(Num));
 
-//function that sorts an array of strings in alphabetical order. 
+//function that sorts an array of strings in alphabetical order.
 
 // function sortArray(arr){
 //     return arr.slice().sort();
@@ -234,8 +226,8 @@
 // console.log(sortArray(array));
 
 //=====================================
-//  bubble short alogorith we can use to solve it 
-//  need to check latter 
+//  bubble short alogorith we can use to solve it
+//  need to check latter
 // }
 
 //------------------------
@@ -251,22 +243,58 @@
 //     return -1
 // }
 
-
 // let ArrayElement=[1, 2, 3, 4, 5]
 // let Elements=3;
 
 // console.log(findIndexof(ArrayElement,Elements));
 
-function findIndexOf(arr,elemet){
-    for(let i=0; i<arr.length; i++){
-        if(arr[i]===elemet){
-            return i;
-        }
+// function findIndexOf(arr,elemet){
+//     for(let i=0; i<arr.length; i++){
+//         if(arr[i]===elemet){
+//             return i;
+//         }
+//     }
+//     return -1;
+// }
+
+// let ArrayElement=[1, 2, 3, 4, 5]
+// let Elements=3;
+
+// console.log(findIndexOf(ArrayElement,Elements))
+
+//Write a function that removes all falsy values (false, null, 0, “”, undefined, and NaN) from an array
+
+// function boolenFilter(arr){
+//     return arr.filter(Boolean);
+// }
+
+// let arrayBoolean= [false, null, 0, undefined, NaN]
+
+// console.log(boolenFilter(arrayBoolean))
+
+//function that merges two arrays into a single array, alternating elements from each array.
+
+function mergeArray(arr1, arr2) {
+  const mergedArray = [];
+
+  const maxLength = Math.max(arr1.length, arr2.length);
+  console.log(maxLength)
+  console.log(arr1.length);
+  console.log(arr2.length);
+
+
+  for (let i = 0; i < maxLength; i++) {
+    if (i < arr1.length) {
+      mergedArray.push(arr1[i]);
     }
-    return -1;
+    if (i < arr2.length) {
+      mergedArray.push(arr2[i]);
+    }
+  }
+  return mergedArray;
 }
 
-let ArrayElement=[1, 2, 3, 4, 5]
-let Elements=3;
+let array1 = [1, 4, 7, 8];
+let array2 = [9, 8, 76,6,9,45,66];
 
-console.log(findIndexOf(ArrayElement,Elements))
+console.table(mergeArray(array1, array2));
