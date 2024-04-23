@@ -274,27 +274,52 @@
 
 //function that merges two arrays into a single array, alternating elements from each array.
 
-function mergeArray(arr1, arr2) {
-  const mergedArray = [];
+// function mergeArray(arr1, arr2) {
+//   const mergedArray = [];
 
-  const maxLength = Math.max(arr1.length, arr2.length);
-  console.log(maxLength)
-  console.log(arr1.length);
-  console.log(arr2.length);
+//   const maxLength = Math.max(arr1.length, arr2.length);
+//   console.log(maxLength)
+//   console.log(arr1.length);
+//   console.log(arr2.length);
 
 
-  for (let i = 0; i < maxLength; i++) {
-    if (i < arr1.length) {
-      mergedArray.push(arr1[i]);
-    }
-    if (i < arr2.length) {
-      mergedArray.push(arr2[i]);
-    }
-  }
-  return mergedArray;
-}
+//   for (let i = 0; i < maxLength; i++) {
+//     if (i < arr1.length) {
+//       mergedArray.push(arr1[i]);
+//     }
+//     if (i < arr2.length) {
+//       mergedArray.push(arr2[i]);
+//     }
+//   }
+//   return mergedArray;
+// }
 
-let array1 = [1, 4, 7, 8];
-let array2 = [9, 8, 76,6,9,45,66];
+// let array1 = [1, 4, 7, 8];
+// let array2 = [9, 8, 76,6,9,45,66];
 
-console.table(mergeArray(array1, array2));
+// console.table(mergeArray(array1, array2));
+
+
+//function that finds the second smallest element in an array of integers.
+
+// function seconsArrayElement(arr){
+//   let shortArray = arr.sort();
+//   console.log(shortArray);
+//   return  shortArray[1];
+// }
+
+
+// let arrayEle =[1,5,3,8,0];
+
+// console.log(seconsArrayElement(arrayEle));
+
+//without inbuild function--> need to check one more time 
+
+// function secondSmallestNum(arr){
+// let sortArray= arr.sort((a,b)=> a-b);
+// return sortArray[1];
+// }
+
+
+// let arrayEle =[1,5,3,8,0];
+// console.log(secondSmallestNum(arrayEle))
