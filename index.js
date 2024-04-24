@@ -323,3 +323,35 @@
 
 // let arrayEle =[1,5,3,8,0];
 // console.log(secondSmallestNum(arrayEle))
+
+//------------------------------------------------------------------------------------------
+
+//function that groups elements in an array based on a given condition. For example, grouping even and odd numbers into separate arrays.
+
+
+function seperaterArray(arr){
+    let evenArray =[];
+    let oddArray =[];
+    for(let i=0; i<arr.length; i++){
+        if(arr[i]%2===0){
+            evenArray.push(arr[i]);
+        }else{
+            oddArray.push(arr[i]);
+        }
+
+    }
+    return [evenArray,oddArray]
+}
+
+
+let arrayTest =[1,4,7,2,4];
+console.log(seperaterArray(arrayTest));
+
+
+
+
+
+
+
+
+
