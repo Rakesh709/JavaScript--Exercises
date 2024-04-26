@@ -25,3 +25,46 @@
 
 // const sports = new Array("cricket", "football","competitive-programming");
 // console.log("sports:",sports)
+
+
+//**************************************************************** */
+
+//3. Iterate over an array in JavaScript
+
+// let arr= [1,2,3,5,67];
+
+// for(let i=0; i<arr.length; i++){
+//     console.log(arr[i]);
+// }
+
+//for each method
+
+// let index=0;
+// let array = [1,2,3,5,8];
+
+// array.forEach(myFunction);
+
+// function myFunction(item, index){
+//     console.log(item);
+    
+// }
+
+// const fruits = ["apple", "orange", "cherry"];
+
+// fruits.forEach(function(item){
+//     console.log(item +" is a fruit.");
+// });
+
+// const num = [1,2,3,4];
+// let sum=0;
+// num.forEach(function(item){
+//     sum+=item
+//     console.log(sum)
+// })
+
+
+const number = [1,2,3,4];
+
+number.forEach(function(item,index,arr){
+    arr[index]=item*10
+})
