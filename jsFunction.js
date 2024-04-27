@@ -41,12 +41,38 @@
 
 //nested function
 
-function msg(fistname){
-    function hey(){
-        console.log("Hey",fistname);
+// function msg(fistname){
+//     function hey(){
+//         console.log("Hey",fistname);
+//     }
+//     return hey;
+// }
+
+
+// console.log(msg("rakesh"))
+
+
+//************************************************************ */
+
+//2.currying function in JavaScript
+ // transforms the function of multiple arguments into several functions of a single argument in sequence
+
+
+//  function calculateVolume(l,b,h){
+//     return l*b*h
+//  }
+
+//  console.log(calculateVolume(3,4,5));
+
+
+function calaculateVolume(length){
+    return function (breadth){
+        return function (height){
+            return length*breadth*height;
+        }
     }
-    return hey;
 }
 
+console.log(calaculateVolume(3)(4)(5));
 
-console.log(msg("rakesh"))
+//it is like we have multipkle argument we can pass in nested ofrm of function and passinf the argument is little bit diffrent
