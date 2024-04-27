@@ -63,8 +63,46 @@
 // })
 
 
-const number = [1,2,3,4];
+// const number = [1,2,3,4];
 
-number.forEach(function(item,index,arr){
-    arr[index]=item*10
-})
+// number.forEach(function(item,index,arr){
+//     arr[index]=item*10
+// })
+
+
+//**************************************************************** */
+
+//4.create a zero filled array in JavaScript
+//syntax : arr(length).fill(value);
+
+
+// let fillArray= Array(4).fill("no");
+
+// console.log(fillArray); 
+// [ 'no', 'no', 'no', 'no' ]
+
+// console.log(`[${fillArray}]`)
+// [no,no,no,no]
+
+// output is diff becaouse of template littral this is how js handle to string convertion.
+
+//filled array of size 3*3(2d array)
+
+// const arr2d= new Array(3).fill().map(()=> new Array(3).fill(0));
+
+// console.log(arr2d);
+
+//need to check one more time 
+
+
+
+
+
+
+
+
+
+
+
+
+
