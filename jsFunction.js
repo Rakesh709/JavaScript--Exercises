@@ -65,14 +65,14 @@
 //  console.log(calculateVolume(3,4,5));
 
 
-function calaculateVolume(length){
-    return function (breadth){
-        return function (height){
-            return length*breadth*height;
-        }
-    }
-}
+// function calaculateVolume(length){
+//     return function (breadth){
+//         return function (height){
+//             return length*breadth*height;
+//         }
+//     }
+// }
 
-console.log(calaculateVolume(3)(4)(5));
+// console.log(calaculateVolume(3)(4)(5));
 
 //it is like we have multipkle argument we can pass in nested ofrm of function and passinf the argument is little bit diffrent

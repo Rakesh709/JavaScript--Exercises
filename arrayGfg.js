@@ -94,8 +94,32 @@
 
 //need to check one more time 
 
+//************************************************************************** */
+
+//5. Array with a Specific Length and Pre-filled Values
+
+// let array = new Array(4).fill(0)
+// console.log(array);
 
 
+//*************************************************************************** */
+
+//6. Array includes a value
+
+
+
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+function check(element){
+    for(let i=0; i<num.length; i++){
+        if(num[i]===element){
+            return "element found "+ num[i]
+        }
+    }
+    return "not found "+ element
+}
+
+
+console.log(check(89))
 
 
 
