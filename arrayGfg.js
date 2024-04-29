@@ -108,24 +108,45 @@
 
 
 
-let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-function check(element){
-    for(let i=0; i<num.length; i++){
-        if(num[i]===element){
-            return "element found "+ num[i]
-        }
-    }
-    return "not found "+ element
-}
+// let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// function check(element){
+//     for(let i=0; i<num.length; i++){
+//         if(num[i]===element){
+//             return "element found "+ num[i]
+//         }
+//     }
+//     return "not found "+ element
+// }
 
 
-console.log(check(89))
+// console.log(check(89))
 
 
+//********************************************* */
+//7. Access Elements in an Array
+
+const array = [100, 200, 300, 400, 500]; 
+
+// array.forEach(accessFunction);
+
+// function accessFunction(item){
+//     console.log(item)
+// }
+
+// for(let i=0; i<array.length; i++){
+//     console.log(array[i]);
+// }
 
 
+//Destructuring Assignment
 
+// let [firstName,secondName , thirdName,forthname,fifth] = ["alpha", "beta", "gamma", "delta"];
 
+// console.log(firstName);
+// console.log(thirdName)
+// console.log(forthname)
+// console.log(fifth)
+// console.log(secondName)
 
 
 
