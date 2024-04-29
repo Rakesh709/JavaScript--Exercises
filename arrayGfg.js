@@ -125,7 +125,7 @@
 //********************************************* */
 //7. Access Elements in an Array
 
-const array = [100, 200, 300, 400, 500]; 
+// const array = [100, 200, 300, 400, 500]; 
 
 // array.forEach(accessFunction);
 
@@ -148,6 +148,31 @@ const array = [100, 200, 300, 400, 500];
 // console.log(fifth)
 // console.log(secondName)
 
+
+//******************************************************* */
+
+//8. Determine the Length of an Array
+
+
+//the length property of the array to determine the length of the array. It will return the number of elements in an array
+// let arr = [12, 4.7, 9, 10,55,77];
+// // console.log(arr.length);
+
+// let size=0;
+// for(let i in arr){
+//     size++
+// }
+
+// console.log(size)
+
+let arr2= ["rakesh",56.333]
+let size=0;
+for(let i of arr2){
+    size++;
+}
+
+
+console.log(size)
 
 
 
