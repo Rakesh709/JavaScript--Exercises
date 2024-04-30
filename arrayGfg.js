@@ -165,14 +165,86 @@
 
 // console.log(size)
 
-let arr2= ["rakesh",56.333]
-let size=0;
-for(let i of arr2){
-    size++;
-}
+// let arr2= ["rakesh",56.333]
+// let size=0;
+// for(let i of arr2){
+//     size++;
+// }
 
 
-console.log(size)
+// console.log(size)
+
+
+//---------------------------------------------------------------------------------
+
+//9. Check if an element is present in an array
+
+//Approach 1: Using includes() method
+
+// const arr = [12,34,56,45];
+
+// if(arr.includes(12)){
+//     console.log("12 is present")
+// }else{
+//     console.log( "12 is not present");
+// }
+
+// function findElement(arr,element){
+//     if(arr.includes(element)){
+//         return `${element} is present`
+//     }else{
+//         return `${element} is not present`
+//     }
+// }
+
+// let array = [12,34,56,45];
+// let ele = 12;
+
+// console.log(findElement(array,56));
+
+//Approach 3: Using the find() method
+
+
+// const arr = [45,67,88,12,3,4];
+
+// const result = arr.find(element => element===199);
+
+// if(result!==undefined){
+//     console.log(`${result} is present`)
+// }else{
+//     console.log(`result is not present`)
+// }
+
+// function findElement(arr,element){
+//     let result = arr.find(elem =>elem===element)
+//     if(result!==undefined){
+//         return "found"
+//     }else{
+//         return "not found"
+//     }
+// }
+
+
+// const arr = [45,67,88,12,3,4];
+
+// console.log(findElement(arr,12))
+
+// continue......
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
