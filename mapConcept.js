@@ -13,7 +13,7 @@ arrOne.map(value/element, index, array)
 */
 
 
-const numbers =[1,2,3,4];
+//const numbers =[1,2,3,4];
 // const doubled = numbers.map(item => item *5);
 // console.log(doubled)
 
@@ -21,24 +21,33 @@ const numbers =[1,2,3,4];
 //     return num*5;
 // }
 
-const newArray = numbers.map(item => item*10);
+// const newArray = numbers.map(item => item*10);
 
-console.log(newArray);
-console.log(numbers)
+// console.log(newArray);
+// console.log(numbers)
 
 
 
 /* *************************************************** */
 
+const square = (x)=> x*x;
 
+console.log(square(10),7)
 
+const add = (a,b)=>a+b;
 
+console.log(add(5,5));
 
+const greet = (name) => `hello, ${name}!`;
 
+console.log(greet("rakesh"));
 
+const sum =(a,b)=>{
+    const result = a+b;
+    return result;
+}
 
-
-
+console.log(sum(1,2));
 
 
 
