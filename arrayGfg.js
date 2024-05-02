@@ -231,22 +231,22 @@
 
 // Approach 4: Using the for() Loop
 
-// const arr = [12,45,77,33,79];
+const arr = [12,45,77,33,79];
 
-//  let value = false;
+ let value = false;
 
-//  for(let i=0; i< arr.length; i++){
-//     if (arr[i]==45) {
-//         value=true;
-//         break;
-//     }
-//  }
+ for(let i=0; i< arr.length; i++){
+    if (arr[i]==45) {
+        value=true;
+        break;
+    }
+ }
 
-// if(value){
-//     console.log("value is present")
-// }else{
-//     console.log("value not present");
-// }
+if(value){
+    console.log("value is present")
+}else{
+    console.log("value not present");
+}
 
 
 
