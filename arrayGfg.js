@@ -177,7 +177,7 @@
 
 //---------------------------------------------------------------------------------
 
-//9. Check if an element is present in an array
+//9. checkinf if an element is present in an array
 
 //Approach 1: Using includes() method
 
@@ -229,7 +229,26 @@
 
 // console.log(findElement(arr,12))
 
-// continue......
+// Approach 4: Using the for() Loop
+
+// const arr = [12,45,77,33,79];
+
+//  let value = false;
+
+//  for(let i=0; i< arr.length; i++){
+//     if (arr[i]==45) {
+//         value=true;
+//         break;
+//     }
+//  }
+
+// if(value){
+//     console.log("value is present")
+// }else{
+//     console.log("value not present");
+// }
+
+
 
 
 
