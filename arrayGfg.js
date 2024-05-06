@@ -231,32 +231,104 @@
 
 // Approach 4: Using the for() Loop
 
-const arr = [12,45,77,33,79];
+// const arr = [12,45,77,33,79];
 
- let value = false;
+//  let value = false;
 
- for(let i=0; i< arr.length; i++){
-    if (arr[i]==45) {
-        value=true;
-        break;
+//  for(let i=0; i< arr.length; i++){
+//     if (arr[i]==45) {
+//         value=true;
+//         break;
+//     }
+//  }
+
+// if(value){
+//     console.log("value is present")
+// }else{
+//     console.log("value not present");
+// }
+
+//-------------------------------------------------------------------
+
+//Difference between Array and Array of Objects in JavaScript
+
+/*
+
+Array
+An Array is a collection of data and a data structure that is stored in a sequence of memory locations.
+
+*/
+
+// let arr = [1, 2, 3, 4, 5];
+
+// for(let i=0; i<arr.length; i++){
+//     console.log(arr[i])
+// }
+
+// arr.pop();
+
+// console.log(arr)
+
+/* 
+An array of objects
+It stores multiple values in a single variable. The object can contain anything in the real world such as person names, cars, and game characters */
+
+// Array of objects
+let myObject = {
+    jhon: {
+        name: 'jhon',
+        age: 12,
+        gender: 'male'
+    },
+    rita: {
+        name: 'rita',
+        age: 32,
+        gender: 'male'
     }
- }
+};
 
-if(value){
-    console.log("value is present")
-}else{
-    console.log("value not present");
+//to print any value 
+//// Using DOT notation
+console.log(myObject.jhon.gender);
+
+
+// Using [] notation
+
+console.log(myObject.rita['age'])
+
+// Using delete keyword
+delete myObject.jhon;
+
+// Iterating using for..in loop
+
+for(let key in myObject){
+    console.log(myObject[key])
 }
 
 
+/*
+Array
+
+Array of objects
+
+Arrays are best to use when the elements are numbers.
+
+Objects are best to use when the elements’ strings (text).
+
+The data inside an array is known as Elements.
+
+The data inside objects are known as Properties which consists of a key and a value.
+
+The elements can be manipulated using [].  
+
+The properties can be manipulated using both.DOT notation and [].
+
+The elements can be popped out of an array using the pop() function.
+
+The keys or properties can be deleted by using the delete keyword.
 
 
-
-
-
-
-
-
+*/
 
 
 
