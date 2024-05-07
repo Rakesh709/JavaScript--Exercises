@@ -274,36 +274,36 @@ An array of objects
 It stores multiple values in a single variable. The object can contain anything in the real world such as person names, cars, and game characters */
 
 // Array of objects
-let myObject = {
-    jhon: {
-        name: 'jhon',
-        age: 12,
-        gender: 'male'
-    },
-    rita: {
-        name: 'rita',
-        age: 32,
-        gender: 'male'
-    }
-};
+// let myObject = {
+//     jhon: {
+//         name: 'jhon',
+//         age: 12,
+//         gender: 'male'
+//     },
+//     rita: {
+//         name: 'rita',
+//         age: 32,
+//         gender: 'male'
+//     }
+// };
 
-//to print any value 
-//// Using DOT notation
-console.log(myObject.jhon.gender);
+// //to print any value 
+// //// Using DOT notation
+// console.log(myObject.jhon.gender);
 
 
-// Using [] notation
+// // Using [] notation
 
-console.log(myObject.rita['age'])
+// console.log(myObject.rita['age'])
 
-// Using delete keyword
-delete myObject.jhon;
+// // Using delete keyword
+// delete myObject.jhon;
 
-// Iterating using for..in loop
+// // Iterating using for..in loop
 
-for(let key in myObject){
-    console.log(myObject[key])
-}
+// for(let key in myObject){
+//     console.log(myObject[key])
+// }
 
 
 /*
@@ -331,11 +331,35 @@ The keys or properties can be deleted by using the delete keyword.
 */
 
 
+//-------------------------------------------------------------------------
+
+//Swap First and Last Elements
+
+// Using Temporary Variable
+//syntax
+// let temp =arr1[0];
+// arr1[0]= arr1[arr1.length -1];
+// arr1[arr1.length -1] =temp;
 
 
+// let arr1 = [10, 20, 30, 40, 50];
 
+// let tempArr = arr1[0];
+// arr1[0]= arr1[arr1.length -1];
+// console.log(arr1)
+// arr1[arr1.length -1] = tempArr ;
+// console.log(arr1); 
 
+//Approach 2: Array Destructuring
 
+// [arr[0],arr[arr.length-1] = arr[arr.length-1],arr[0]]
 
+// let arr1 = [10, 20, 30, 40, 50];
+
+// [arr1[0],arr1[arr1.length-1]]= [arr1[arr1.length-1],arr1[0]];
+
+// console.log(arr1)
+
+//Approach 3: Using XOR Bitwise Operator
 
 
