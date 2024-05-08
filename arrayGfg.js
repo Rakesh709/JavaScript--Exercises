@@ -363,3 +363,22 @@ The keys or properties can be deleted by using the delete keyword.
 //Approach 3: Using XOR Bitwise Operator
 
 
+//------------------------------------------------------------------------------------
+//11 populate an array
+
+// map method
+// const numbers = [1, 2, 3, 4, 5];
+
+// let newArray = numbers.map((num) => num)
+
+// console.log(newArray)
+
+// Using Spread Operator
+
+// const numbers = [1, 2, 3, 4, 5];
+
+
+// console.log([...numbers].map((numbers)=>numbers+1))
+
+
+
