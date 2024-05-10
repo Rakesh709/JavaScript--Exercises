@@ -387,16 +387,19 @@ The keys or properties can be deleted by using the delete keyword.
 
 //Method 1: Using JavaScript Spread Operator
 
-let Arr = [1, 2, 3, 4, 5, 6];
+// let Arr = [1, 2, 3, 4, 5, 6];
 
-let middleIndex = Math.floor(Arr.length/2);
-console.log(Arr.length)
-console.log(middleIndex)
+// let middleIndex = Math.floor(Arr.length/2);
+// console.log(Arr.length)
+// console.log(middleIndex)
 
-let newArray = [...Arr.slice(0,middleIndex), ...Arr.slice(middleIndex+1)]
+// let newArray = [...Arr.slice(0,middleIndex), ...Arr.slice(middleIndex+1)]
 
-console.log(newArray)
+// console.log(newArray)
 
-
+let Arr = [ 1,2,3,4,5,6];
+  let Middle =Math.floor(Arr.length/2)
+Arr.splice(Middle,1)
+console.log(Arr)
 
 
