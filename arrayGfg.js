@@ -380,5 +380,23 @@ The keys or properties can be deleted by using the delete keyword.
 
 // console.log([...numbers].map((numbers)=>numbers+1))
 
+//----------------------------------------------------------------------------------
+
+//12. Delete Middle Element
+
+
+//Method 1: Using JavaScript Spread Operator
+
+let Arr = [1, 2, 3, 4, 5, 6];
+
+let middleIndex = Math.floor(Arr.length/2);
+console.log(Arr.length)
+console.log(middleIndex)
+
+let newArray = [...Arr.slice(0,middleIndex), ...Arr.slice(middleIndex+1)]
+
+console.log(newArray)
+
+
 
 
