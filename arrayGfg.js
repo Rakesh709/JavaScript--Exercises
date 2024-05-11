@@ -397,9 +397,40 @@ The keys or properties can be deleted by using the delete keyword.
 
 // console.log(newArray)
 
+
+
+//spilce method : it will take 3 argument (length(starting), hou much to remove  , )
+// let Arr = [ 1,2,3,4,5,6];
+//   let Middle =Math.floor(Arr.length/2)
+// Arr.splice(Middle,1)
+// console.log(Arr)
+
+
+//--------------------------------------------------------
+
+//13  delete an item from an array
+//Method 1: Using for loop and push() Method
+
+
+
+// let arr = ['gfg', 'GFG', 'g', 'GeeksforGeeks'];
+// let newArr =[];
+
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i]!=="GFG"){
+//         newArr.push(arr[i])
+
+//     }
+// }
+
+// console.log(arr);
+// console.log("After Deletion",newArr);
+
+//Method 4: Using splice() Method
+
 let Arr = [ 1,2,3,4,5,6];
-  let Middle =Math.floor(Arr.length/2)
-Arr.splice(Middle,1)
+
+let elemRemove = Math.floor(Arr.length/2);
+
+Arr.splice(elemRemove,1,3)
 console.log(Arr)
-
-
