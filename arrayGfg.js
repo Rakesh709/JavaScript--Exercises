@@ -428,9 +428,33 @@ The keys or properties can be deleted by using the delete keyword.
 
 //Method 4: Using splice() Method
 
-let Arr = [ 1,2,3,4,5,6];
+// let Arr = [ 1,2,3,4,5,6];
 
-let elemRemove = Math.floor(Arr.length/2);
+// let elemRemove = Math.floor(Arr.length/2);
 
-Arr.splice(elemRemove,1,3)
-console.log(Arr)
+// Arr.splice(elemRemove,1,3)
+// console.log(Arr)
+
+//------------------------------------------------
+
+//14 Copy Array Items into Another Array
+
+/*
+Approaches 1: Using the Spread Operator (…)
+Approach 2: Using slice() Method
+Approach 3: Using apply() Method
+Approach 4: Using Array.concat() Method
+Approach 5: Using push() Method
+*/
+
+// const arr = [5, 10, 15, 20, 25];
+
+// let newArr = arr.map(item=> item);
+
+// console.log(newArr)
+
+//---------------------
+//15 How to Copy Array by Value in JavaScript ?
+
+//16 clone an array in JavaScript ?
+
