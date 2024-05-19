@@ -329,29 +329,41 @@
 //function that groups elements in an array based on a given condition. For example, grouping even and odd numbers into separate arrays.
 
 
-function seperaterArray(arr){
-    let evenArray =[];
-    let oddArray =[];
-    for(let i=0; i<arr.length; i++){
-        if(arr[i]%2===0){
-            evenArray.push(arr[i]);
-        }else{
-            oddArray.push(arr[i]);
-        }
+// function seperaterArray(arr){
+//     let evenArray =[];
+//     let oddArray =[];
+//     for(let i=0; i<arr.length; i++){
+//         if(arr[i]%2===0){
+//             evenArray.push(arr[i]);
+//         }else{
+//             oddArray.push(arr[i]);
+//         }
 
+//     }
+//     return [evenArray,oddArray]
+// }
+
+
+// let arrayTest =[1,4,7,2,4];
+// console.log(seperaterArray(arrayTest));
+
+//-----------------------------------------------------------------------
+
+// programe to sort the array
+
+
+let array = [34, 7, 23, 32, 5, 62];
+
+for(let i=0; i<array.length; i++){
+    for(let j=0; j<array.length; j++){
+        if(array[i]<array[j]){
+            let temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
     }
-    return [evenArray,oddArray]
 }
 
-
-let arrayTest =[1,4,7,2,4];
-console.log(seperaterArray(arrayTest));
-
-
-
-
-
-
-
+console.log(array);
 
 
