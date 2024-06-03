@@ -352,18 +352,31 @@
 // programe to sort the array
 
 
-let array = [34, 7, 23, 32, 5, 62];
+// let array = [34, 7, 23, 32, 5, 62];
 
-for(let i=0; i<array.length; i++){
-    for(let j=0; j<array.length; j++){
-        if(array[i]<array[j]){
-            let temp = array[i];
-            array[i] = array[j];
-            array[j] = temp;
-        }
-    }
+// for(let i=0; i<array.length; i++){
+//     for(let j=0; j<array.length; j++){
+//         if(array[i]<array[j]){
+//             let temp = array[i];
+//             array[i] = array[j];
+//             array[j] = temp;
+//         }
+//     }
+// }
+
+// console.log(array);
+
+
+let arr = [34.5,7,2]
+
+for(let i=0; i<arr.length; i++){
+	for(let j=0; j<arr.length; j++){
+		if(arr[i]<arr[j]){
+			let temp = arr[i];
+			arr[i]= arr[j];
+			arr[j]= temp
+		}
+	}
 }
 
-console.log(array);
-
-
+console.log(arr)
