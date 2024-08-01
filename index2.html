@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Chai and code</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tueday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thusday</div>
+    </div>
+    
+</body>
+
+    <script>
+        const paraent= document.querySelector('.parent')
+        console.log(paraent);
+        console.log(paraent.children[1].innerHTML);
+
+        for (let i = 0; i < paraent.children.length; i++) {
+
+            console.log(paraent.children[i].innerHTML);
+            
+            
+        }
+
+        paraent.children[1].style.color= "orange"
+
+        // this is important 
+
+        console.log("Nodes: ", paraent.childNodes);
+
+        /*
+       0
+: 
+text
+1
+: 
+div.day
+2
+: 
+text
+3
+: 
+div.day
+4
+: 
+text
+5
+: 
+div.day
+6
+: 
+text
+7
+: 
+div.day
+8
+: 
+text
+length
+: 
+9
+        */
+
+    </script>
+</html>
