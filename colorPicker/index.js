@@ -1,7 +1,7 @@
 const buttons=document.querySelectorAll('.button')
 console.log(buttons);
 
-const body = document.querySelector("body")
+const body = document.getElementById("mainBody")
 
 console.log(body);
 
