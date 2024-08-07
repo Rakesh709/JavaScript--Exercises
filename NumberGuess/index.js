@@ -34,7 +34,15 @@ function validateGuess(guess){
     }else if(guess>100){
         alert("Please enter a number less than 100")
     }else{
-        
+        prevGuess.push(guess)
+        if(numGuess===11){
+            displayGuess(guess)
+            displayMessage(`Game Over. Random number was ${randomNumber}`)
+            endGame()
+        }else{
+            displayGuess(guess)
+            checkGuess(guess)
+        }
     }
 }
 
