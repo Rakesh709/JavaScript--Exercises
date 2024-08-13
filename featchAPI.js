@@ -14,7 +14,10 @@ const getData = async ()=>{
     const data = await resp.json();
 
     const div = document.createElement("div")
-
+    div.className= "main"
+    div.id= "mainId"
+    div.innerHTML="good"
+    document.body.appendChild(div)
     console.log(data);
     
 }
