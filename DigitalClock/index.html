@@ -18,7 +18,40 @@
         align-items: center;
         flex-direction: column;
       }
+
+      #international-time-zone{
+        display: flex;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #international-london-time-zone{
+        display: flex;
+        height: 30vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
       #clock {
+        font-size: 40px;
+        background-color: orange;
+        padding: 20px 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+
+      #int-clock {
+        font-size: 40px;
+        background-color: orange;
+        padding: 20px 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+      }
+
+      #london-clock {
         font-size: 40px;
         background-color: orange;
         padding: 20px 50px;
@@ -28,15 +61,17 @@
     </style>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
-        >Youtube channel</a
-      >
-    </nav>
     <div class="center">
-      <div id="banner"><span>Your local time</span></div>
+      <div id="banner"><span>Indian local time</span></div>
       <div id="clock"></div>
+      <div id="international-time-zone">
+        <span>International time: America/New_York</span>
+        <div id="int-clock"></div>
+      </div>
+      <div id="international-london-time-zone">
+        <span>International time: Europe/London</span>
+        <div id="london-clock"></div>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>
