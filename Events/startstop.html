@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Js and code</h1>
+    <p id="number"></p>
+    <button id="start">start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    const hiMsg = function () {
+      const num = (document.getElementById("number").innerHTML = Math.round(
+        Math.random() * 100
+      ));
+      console.log(num);
+    };
+
+    document.getElementById("start").addEventListener("click", function () {
+      const hiIntr = setInterval(hiMsg, 1000);
+
+      document.getElementById("stop").addEventListener("click", function () {
+        clearInterval(hiIntr);
+      });
+    });
+  </script>
+</html>
