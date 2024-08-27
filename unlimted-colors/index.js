@@ -12,21 +12,21 @@ const randomColor = function(){
 //console.log(randomColor())
 let intervalID;
 const startChangingColor= function(){
-    const chnageBgColor= function(){
-        if(!intervalID){
-            document.body.style.backgroundColor=randomColor();
-        }
-        
+    if(!intervalID){
+        intervalID = setInterval(chnageBgColor,1000)
     }
 
-    intervalID = setInterval(chnageBgColor,1000)
+    function chnageBgColor(){
+        document.body.style.backgroundColor=randomColor();
+    }
+
+    
     
 }
 
 
 const stopChangingColor= function(){
     clearInterval(intervalID)
-    //to free some memory 
     intervalID=null
 }
 
