@@ -16,8 +16,7 @@ for(let num of arr){
 let greeting = "Hello World !"
 
 for(let greet of greeting){
-    //console.log(`charter is ${greet}`);
-    
+    //console.log(`charter is ${greet}`);   
 }
 
 //TypedArrya
@@ -28,18 +27,16 @@ for(let greet of greeting){
 const map = new Map()
 map.set('In','India')
 map.set('Rus','Russia')
-map.set('uss','Russia') //doublicate is not allowed 
+map.set('Rus','Russia') //doublicate is not allowed 
 
 for(const [code,country] of map){
-    //console.log(`${country} code is ${code}`);
-    
+    //console.log(`${country} code is ${code}`);   
 }
 
 //[code,country] is called array destructure
 
 for (const code of map ){
-    //console.log(code);
-    
+    //console.log(code);   
 }
 
 //set
@@ -47,8 +44,7 @@ for (const code of map ){
 const num = new Set([1,2,3,4,4,5,5])
 
 for(const value of num){
-    //console.log(value);
-    
+    //console.log(value);   
 }
 
 //***********************objects *****************/
@@ -78,21 +74,20 @@ for(const key in programming){
 
 const coding = [ "js","cpp","java","python"]
 
-// coding.forEach(function (value){
-//     console.log(value);
+coding.forEach(function (value){
+    //console.log(value);
     
-// })
+})
 
 // coding.forEach((value)=>{
 //     console.log(value);
     
 // })
 
-//coding.forEach((value)=> console.log(value))
+// coding.forEach((value)=> console.log(value))
 
 function printMe(item){
-    //console.log(item);
-    
+    //console.log(item);   
 }
 
 coding.forEach(printMe)
