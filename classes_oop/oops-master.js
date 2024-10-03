@@ -159,4 +159,33 @@ class Calculator{
 
 
 //how to use static method
-console.log(Calculator.add(1,2));
+//console.log(Calculator.add(1,2));
+
+
+//GETTER AND SETTERS 
+
+class Employee{
+
+    #salary;
+    constructor(name,salary){
+        this.name= name 
+        this.#salary= salary
+    }
+
+    //method
+    get salary(){
+        return `You are not allowed to see salary`
+    }
+
+    set salary(value){
+        if(value<0){
+            console.error("Invalid salary")
+        }else{
+            this._salary= value
+        }
+    }
+}
+
+let emp = new Employee("Alice",5000)
+
+console.log(emp._salary);
