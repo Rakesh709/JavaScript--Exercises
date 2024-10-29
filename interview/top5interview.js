@@ -67,7 +67,7 @@ function removeDublicate(arr){
     return newArr
 }
 
-//console.log(removeDublicate([ 1,2,3,4,4,4,5,6,7]));
+console.log(removeDublicate([ 1,2,3,4,5,6,7,4,55,55]));
 
 function removeDublicate2(arr){
     let uniqueArray =[];
