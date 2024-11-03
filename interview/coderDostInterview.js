@@ -37,6 +37,25 @@
         
 //     }
 // }
+
+//find the missing number from the series 
+//[5,7,9,11,15,17]
+//13 
+
+// let num =[5,7,9,11,15,17]
+
+// for(let i=0; i<num.length; i++){
+//     let currentNum = num[i]
+//     let nextNum = currentNum+2
+//     if(num[i+1] === nextNum) continue
+//     else{
+//         console.log(nextNum);
+//         break
+        
+//     }
+// }
+
+
 //2 common key value 
 
 // const input1 = {a:1,b:2,c:3,d:10,e:12}
@@ -65,10 +84,10 @@ const output = 7
 let input1 = [1,4,7,2,4,7]
 const output1 =4
 
-function secondlargest(input){
-    let num = [...new Set(input)].sort((a,b)=>a-b);
-    return num[num.length-2]
-}
+// function secondlargest(input){
+//     let num = [...new Set(input)].sort((a,b)=>a-b);
+//     return num[num.length-2]
+// }
 
 //console.log(secondlargest(input));
 
@@ -76,8 +95,8 @@ function secondlargest(input){
 //sortt the number 
 
 let sortNum = [1,6,3,7,5,10,1,5]
-console.log(sortNum.sort((a,b)=>a-b));
+//console.log(sortNum.sort((a,b)=>a-b));
 
 
 let numbers = [10,1,5];
-console.log(numbers.sort((a,b)=>a-b));
+//console.log(numbers.sort((a,b)=>a-b));
