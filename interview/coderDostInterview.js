@@ -78,11 +78,11 @@
 
 //second largest number
 
-let input = [1,2,-2,11,7,11]
-const output = 7
+// let input = [1,2,-2,11,7,11]
+// const output = 7
 
-let input1 = [1,4,7,2,4,7]
-const output1 =4
+// let input1 = [1,4,7,2,4,7]
+// const output1 =4
 
 // function secondlargest(input){
 //     let num = [...new Set(input)].sort((a,b)=>a-b);
@@ -100,3 +100,41 @@ let sortNum = [1,6,3,7,5,10,1,5]
 
 let numbers = [10,1,5];
 //console.log(numbers.sort((a,b)=>a-b));
+
+//second largest number without in build function 
+
+//let input = [1,2,-2,11,7,1]
+//7
+
+// function secondlargest(input){
+//     let arr = input.sort((a,b)=> a-b);
+//     let res = arr[arr.length-1]
+
+//     for(let i=arr.length-2; i>=0; i--){
+//         if(res!=input[i]){
+//             res=input[i]
+//             break
+//         }
+//     }
+//     return res
+// }
+
+//console.log(secondlargest([2, 3, 4, 6, 6, 7, 7]));
+
+
+//second largest num in arr
+
+function secondlargest(arr){
+    let sortArray = arr.sort((a,b)=>a-b)
+    let res = sortArray[sortArray.length-1]
+
+    for(let i=arr.length-2; i>=0;i--){
+        if(res !=arr[i]){
+            res= arr[i]
+            break
+        }
+    }
+    return res
+
+}
+console.log(secondlargest([2, 3, 4, 6, 6, 7, 7]));
