@@ -35,6 +35,24 @@ function findLargestNumber(arr){
 
 //console.log(findLargestNumber([1,5,3,8]));
 
+//[8,5,3,1]
+//8
+
+function findLargestNumber(arr){
+    let largestNum =arr[0]
+    for(let i=1; i<arr.length; i++){
+        if(arr[i]>largestNum){
+            largestNum=arr[i]
+        }
+    }
+    return largestNum
+    
+}
+
+console.log(findLargestNumber([8,5,3,1]));
+
+
+
 //8. numnber is prime or not 
 
 function isPrime(number){
@@ -80,5 +98,20 @@ function removeWhiteString(str){
     }
     return result;
 }
+//console.log(removeWhiteString("Hello, World"));
+// hello, world
+//Hello,world
 
-console.log(removeWhiteString("Hello, World"));
+function removeSpace(str){
+    let newStr=''
+    for(let i=0;i<str.length; i++){
+        if(str[i] !=" "){
+            newStr+=str[i]
+            
+        }
+    }
+    return newStr
+}
+
+//console.log(removeSpace("hello, world rakesh    "));
+
