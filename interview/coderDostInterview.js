@@ -126,8 +126,11 @@ let numbers = [10,1,5];
 
 function secondlargest(arr){
     let sortArray = arr.sort((a,b)=>a-b)
+    console.log(sortArray);
+    
     let res = sortArray[sortArray.length-1]
-
+    console.log(res);
+    
     for(let i=arr.length-2; i>=0;i--){
         if(res !=arr[i]){
             res= arr[i]
@@ -137,4 +140,24 @@ function secondlargest(arr){
     return res
 
 }
-console.log(secondlargest([2, 3, 4, 6, 6, 7, 7]));
+//console.log(secondlargest([2, 3, 4, 6, 6, 7, 7]));
+
+
+//rotate the array by 2 inbackword
+const input = [2,7,11,4,-2]
+const output=[11,4,-2,2,7]
+
+function rotateArray(input){
+    for(let i=0;i<2;i++){
+        let temp =input[0]
+        for(let i=0; i<input.length-1;i++){
+            input[i]=input[i+1];
+        }
+        input[input.length-1]=temp;
+    }
+    console.log(input);   
+}
+
+rotateArray(input);
+
+
