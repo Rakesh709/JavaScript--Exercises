@@ -47,3 +47,35 @@ function arrDublicate(arr){
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 //Code 3: Remove Duplicate characters from array of element using filter
+var myArray = ['a', 1, 'a', 2, '1'];
+
+const uniqe = myArray.filter((value,index,arr)=> arr.indexOf(value) === index)
+
+//console.log(uniqe);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Code 4-5:String reverse without reversing of individual words (Array of elements can be reverse with reverse() method but for string it is won't possible so required to split and then join().
+
+function revWord(){
+  let string ="India is my country"
+  let newString = string.split('').reverse().join('').split(' ').reverse().join(' ')
+  return newString
+}
+
+//console.log(revWord());
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Code 6:String reverse without using inbult 
+
+function revWordWithouInBuild(str){
+  let revStr=''
+  for(let i=str.length-1; i>=0; i--){
+    revStr+=str[i]
+  }
+  return revStr
+}
+
+//console.log(revWordWithouInBuild("India is my country"));
+
