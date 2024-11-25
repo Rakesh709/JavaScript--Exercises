@@ -132,4 +132,4 @@ function characterOccurance(str,letter){
 }
 
 
-console.log(characterOccurance("priyapri", "p"));
+//console.log(characterOccurance("priyapri", "p"));
