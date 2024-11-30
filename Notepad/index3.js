@@ -84,8 +84,107 @@ let indexArr = arr.indexOf("c")
 
 //Code 24: Fibonacci Series (0,1,1,2,3,5,8,13....)
 
-function fibSeries(n){
-    return n * fibSeries(n-1)
+// function fibonacciSeries(n){
+//     let n1=0
+//     let n2=1
+//     let nextTerm;
+//     let arr=[]
+
+//     arr.push(n1)
+//     arr.push(n2)
+
+//     for(let i=2; i<=n; i++){
+//         nextTerm =n1+n2;
+//         n1=n2
+//         n2=nextTerm
+//         arr.push(nextTerm)
+//     }
+//     return arr
+// }
+
+// console.log(fibonacciSeries(4));
+// //1+1+2+3+5
+
+function fibonacciSeries(n){
+    let n1=0
+    let n2=1;
+    let temp;
+    let arr=[]
+
+    arr.push(n1)
+    arr.push(n2)
+
+    for(let i=2; i<n;i++){
+        temp=n1+n2;
+        n1=n2
+        n2=temp
+        arr.push(temp)
+    }
+    return arr
 }
 
-console.log(fibSeries(3));
+//console.log(fibonacciSeries(4));
+
+
+function listFibo(n){
+    let arr= [0,1];
+    for(let i=1;i<n; i++){
+        arr.push(arr[i]+arr[i-1])
+    }
+    return arr
+}
+
+//console.log(listFibo(4));
+
+//Code 26: Finding a missing elements in an array and then add with existing elements. (-1 means if elements not found then it will return always -1 as per rule)
+
+// let arrx =[2,4,6]
+// let missingArray = [3,5]
+// let arrrmiss=[]
+
+// //1 +1 =2 -> 2+1 =3 (missing) continue  3+1 =4 -> 4+1 =5(missing cont)
+
+// for(let i=0; i<arrx.length-1 ; i++){
+//     let current = arrx[i]
+//     let next = current+1
+//     if(arrx[i+1]===next){
+//         continue
+//     }else{
+//         console.log(next);
+        
+        
+//     }
+// }
+
+const input = [2,4,6]
+const output = [3,5]
+
+for(let i=0; i<input.length-1; i++){
+    let current  = input[i]
+    let next = current+1
+    if(input[i]===next) continue
+    else{
+        //console.log(next);
+        
+    }
+}
+
+let arrx = [1, 2, 4, 6];
+let arrrmiss = [];
+
+for(let i=0; i<arrx.length-1;i++){
+    let current = arrx[i]
+    let next = arrx[i+1]
+
+    for(let num= current+1; num<next; num++){
+        arrrmiss.push(num)
+    }
+}
+//console.log(arrrmiss);
+
+// let arrShort = [2,5,9,3]
+// console.log(arrShort.sort());
+// console.log(arrShort.sort((a,b)=>a-b));
+
+// Use sort() with a comparator function ((a, b) => a - b) when sorting numbers for proper numerical order.
+// Without a comparator, the default sorting is lexicographical, which might not give the desired result for numbers.
