@@ -8,7 +8,8 @@ const jsUser = {
 };
 
 // console.log(jsUser)
-// console.log(jsUser.name)
+console.log(jsUser.name)
+console.log(jsUser["name"])
 // console.log(jsUser[mySymbol]);
 
 jsUser.greeting = function () {
@@ -144,4 +145,4 @@ const {results} = apiData
 const gender = apiData.results[0].gender
 // console.log(results)
 
-console.log(gender);
+//console.log(gender);
