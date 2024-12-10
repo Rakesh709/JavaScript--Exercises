@@ -188,3 +188,15 @@ for(let i=0; i<arrx.length-1;i++){
 
 // Use sort() with a comparator function ((a, b) => a - b) when sorting numbers for proper numerical order.
 // Without a comparator, the default sorting is lexicographical, which might not give the desired result for numbers.
+
+
+//fibonaci series 
+function listFibonacci(n){
+    let arr=[0,1];
+    for(let i=0;i<n; i++){
+        arr.push(arr[i]+arr[i+1])
+    }
+    return arr
+}
+
+console.log(listFibonacci(4));
