@@ -32,16 +32,28 @@
 
 //char frequncy 
 
-function charFrequency(str){
-    let frequncy= {}
-    for(let char of str){
-      if(frequncy[char]){
-        frequncy[char]+=1
-      }else{
-        frequncy[char]=1
-      }
-    }
-    return frequncy
-}
+// function charFrequency(str){
+//     let frequncy= {}
+//     for(let char of str){
+//       if(frequncy[char]){
+//         frequncy[char]+=1
+//       }else{
+//         frequncy[char]=1
+//       }
+//     }
+//     return frequncy
+// }
 
 //console.log(charFrequency("Rakesh"));
+
+//----------------------------------------
+
+let arr1=[1,2,3,4]
+let arr2=[2,4,6]
+
+let arr=[...arr1,...arr2]
+console.log(arr);
+
+
+
+
