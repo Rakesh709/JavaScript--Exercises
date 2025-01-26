@@ -48,21 +48,36 @@
 
 //----------------------------------------
 
-let arr1=[1,2,3,4]
-let arr2=[2,4,6]
+// let arr1=[1,2,3,4]
+// let arr2=[2,4,6]
 
 // let comArray = arr1.filter(element=>arr2.includes(element))
 // console.log(comArray);
 
-let comArray =[]
+// let comArray =[]
+
+// for(let i=0; i<arr1.length; i++){
+//   for(let j=0; j<arr2.length; j++){
+//     if(arr1[i]===arr2[j]){
+//       comArray.push(arr1[i])
+//     }
+//   }
+// }
+
+// console.log(comArray);
+
+let arr1=[1,2,3,4]
+let arr2=[2,4,6]
+
+let commonArray = []
 
 for(let i=0; i<arr1.length; i++){
   for(let j=0; j<arr2.length; j++){
     if(arr1[i]===arr2[j]){
-      comArray.push(arr1[i])
+      commonArray.push(arr1[i])
     }
   }
+  
 }
 
-console.log(comArray);
-
+console.log(commonArray);
