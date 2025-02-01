@@ -6,32 +6,64 @@
 
 
 //Hoisting in JavaScript 
-x=66;
-var x; //jo bhi defination hai upper chali jati hai file kai hoist ho ke {simple moved forward}
-console.log(x);
+// x=66;
+// var x; //jo bhi defination hai upper chali jati hai file kai hoist ho ke {simple moved forward}
+// console.log(x);
 
-say()
-function say(){
-    console.log("hello");
-}
+// say()
+// function say(){
+//     console.log("hello");
+// }
 
 // var and say defination upperr chali jati hai upper ligal hai ye.
 //------------------------------------------------------------------
-var y=1;
-var call = function (){
-    console.log(y);
-    // var y=1;
-};
+// var y=1;
+// var call = function (){
+//     console.log(y);
+//     // var y=1;
+// };
 
-call(); // get undefined when you removed vat y=1 then it will give 
+// call(); // get undefined when you removed vat y=1 then it will give 
 //--------------------------------------------------------------------
-var y=5;
-var call = function (){
-    var y;   // vat y hoist ho jata hai function kai ander bhi
-    console.log(y);
-    // var y=1;
-};
+// var y=5;
+// var call = function (){
+//     var y;   // vat y hoist ho jata hai function kai ander bhi
+//     console.log(y);
+//     // var y=1;
+// };
 
-call();
+// call();
 
 //--------------------------------------------------------------------
+
+// console.log(b);
+// console.log(a);
+
+let a=10;
+var b=20;
+const c=30
+
+// console.log(b);
+
+// sayHello()
+
+// function sayHello(){
+//     console.log("Hi There!");
+    
+// }
+
+
+
+var hi= function(){
+    //console.log("Hi there");
+    
+}
+
+// hi()
+
+hiii()
+
+var hiii = function(){
+    console.log("Hiiiiiiii");
+    
+}
