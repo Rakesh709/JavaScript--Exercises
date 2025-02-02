@@ -1,0 +1,61 @@
+                                                                                <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debounce Animation</title>
+  <style>
+    /* Simple styles for search box and result */
+    #search-box {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    #result {
+      font-size: 20px;
+      font-weight: bold;
+      color: green;
+      visibility: hidden; /* Hide initially */
+      opacity: 0;
+      transition: opacity 500ms ease-in-out; /* Fade-in effect */
+    }
+
+    #result.visible {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <input id="search-box" type="text" placeholder="Start typing..." />
+  <div id="result">Searching...</div>
+
+  <script>
+    // Debounce Function
+    function debounce(func, delay) {
+      let timer;
+      return function (...args) {
+        clearTimeout(timer); // Clear previous timeout if event occurs again
+        timer = setTimeout(() => func(...args), delay); // Set a new timeout
+      };
+    }
+
+    // Debounced Search Function
+    const debouncedSearch = debounce((query) => {
+      const resultDiv = document.getElementById('result');
+      resultDiv.innerText = `Searching for: ${query}`;
+      resultDiv.classList.add('visible'); // Show result with fade-in
+
+      // Remove the fade-in effect after 500ms to reset it for the next input
+      setTimeout(() => resultDiv.classList.remove('visible'), 500);
+    }, 500);
+
+    // Search Box Event
+    document.getElementById('search-box').addEventListener('input', (event) => {
+      debouncedSearch(event.target.value);
+    });
+  </script>
+                                                                    </body>
+</html>
